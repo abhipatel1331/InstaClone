@@ -45,6 +45,10 @@ a{
   height: max-content;
 }
 
+.collection-item{
+  width: 100%;
+}
+
 .material-icons:hover{
   cursor: pointer;
 }

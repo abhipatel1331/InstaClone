@@ -71,7 +71,18 @@ router.put('/updatepic',requireLogin,(req,res)=>{
         if(err){
             return res.status(422).json({error:"pic cannot post"})
         }
-        res.json(result)
+        res.json(result)    
+    })
+})
+
+router.post('/search-users',(req,res)=>{
+    let userPattern = new RegExp("^"+req.body.query)
+    User.find({email:{$regex:userPattern}})
+    .select("_id email")
+    .then(user=>{
+        res.json({user})
+    }).catch(err=>{
+        console.log(err)
     })
 })
 
