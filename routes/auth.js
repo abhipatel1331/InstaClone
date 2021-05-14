@@ -46,7 +46,7 @@ const transporter =nodemailer.createTransport(sendgridTransport({
             .then(user=>{
                 transporter.sendMail({
                     to:user.email,
-                    from:"no-reply@insta.com",
+                    from:"pabhi7046@gmail.com",
                     subject:"Signup Success",
                     html:"<h1>Welcome to Instagram</h1>"
                      
@@ -110,7 +110,7 @@ const transporter =nodemailer.createTransport(sendgridTransport({
              user.save().then((result)=>{
                  transporter.sendMail({
                      to:user.email,
-                     from:"no-reply@insta.com",
+                     from:"pabhi7046@gmail.com",
                      subject:"password reset",
                      html:`
                      <p>You requested for password reset</p>

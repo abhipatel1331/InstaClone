@@ -1,6 +1,6 @@
 import React,{useState,useContext} from 'react'
 import {Link,useHistory} from 'react-router-dom'
-import {UserContext} from '../../App'
+// import {UserContext} from '../../App'
 import M from 'materialize-css'
 
 const Reset = ()=>{
@@ -36,12 +36,13 @@ const Reset = ()=>{
             console.log(err)
         })
     }
-
+    
     return(
         // <h1>Login</h1>
         <div className="mycard">
              <div className="card auth-card input-field">
                  <h2>Instagram</h2>
+                 
                  <input 
                  type="text"
                  placeholder="email"

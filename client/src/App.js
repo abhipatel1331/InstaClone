@@ -31,12 +31,12 @@ const Routing = ()=>{
     <Switch>
     <Route exact path="/">
       <Home />
-    </Route>
+    </Route>  
     <Route path="/signin">
       <Signin />
     </Route>
     <Route path="/signup">
-      <Signup />
+      <Signup /> 
     </Route>
     <Route exact path="/profile">
       <Profile />
@@ -51,7 +51,7 @@ const Routing = ()=>{
       <SubscribedUserPosts />
     </Route>
     <Route exact path="/reset">
-      <Reset />
+      <Reset/>
     </Route>
     <Route path="/reset/:token ">
       <NewPassword />
